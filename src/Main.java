@@ -4,18 +4,19 @@ public class Main {
     //Найти минимальное чётное число в последовательности
     //положительных чисел или вывести -1, если такого числа не существует.
     //Оценить временную и пространственную сложность алгоритма.
-        int[] sequence1 = {4, 1425, 1, 99, 100, 2, 10};
-        int resultSequence1 = findMinPosEven(sequence1);
-        System.out.println("Минимальное четное число: " + resultSequence1);
+    int[] sequence1 = {4, 1425, 1, 99, 100, 2, 10};
+    int resultSequence1 = findMinPosEven(sequence1);
+    System.out.println("Минимальное четное число: " + resultSequence1);
 
-        int[] sequence2 = {5, 3, 7, 99};
-        int resultSequence2 = findMinPosEven(sequence2);
-        System.out.println("Минимальное четное число: " + resultSequence2);
+    int[] sequence2 = {5, 3, 7, 99};
+    int resultSequence2 = findMinPosEven(sequence2);
+    System.out.println("Минимальное четное число: " + resultSequence2);
 
-        int [] sequence3 = {0, 3434};
-        int resultSequence3 = findMinPosEven(sequence3);
-        System.out.println("Минимальное четное число: " + resultSequence3);
+    int[] sequence3 = {0, 3434};
+    int resultSequence3 = findMinPosEven(sequence3);
+    System.out.println("Минимальное четное число: " + resultSequence3);
   }
+
   public static int findMinPosEven(int[] sequence) {
     int minEven = Integer.MAX_VALUE;
     for (int number : sequence) {

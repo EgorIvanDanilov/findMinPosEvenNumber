@@ -8,18 +8,16 @@ public class Main2 {
     while (scanner.hasNextInt()){
       numbers.add(scanner.nextInt());
     }
-    int min = numbers.get(0);
+    int min = -1;
     for (int x : numbers) {
       if (x % 2 ==0 ) {
-        if (x < min) {
+        //если до этого не было четных или новое меньше предфдущего минимума
+        if (x < min || x < min) {
           min =x;
         }
       }
     }
-    if (min % 2 ==0) {
-      System.out.println(min);
-    } else {
       System.out.println(-1);
-    }
+
   }
 }
